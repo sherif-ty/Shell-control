@@ -1,0 +1,19 @@
+#!/usr/bin/expect -f
+
+spawn $env(SHELL)
+send -- "ssh root@lun.sa\r"
+expect -exact "*"
+send -- "password@nasrcity\r"
+expect -exact "*"
+send -- "cd /\r"
+expect -exact "*"
+send -- "cd /home/shogol/public_html/dev/shogol-backend\r"
+expect -exact "*"
+
+send -- "git pull https://Lun-Dev@dev.azure.com/Lun-Dev/Shogol/_git/shogol-backend\r"
+expect -exact "*"
+send -- "qq736xs7t64yierrqygbyayfuue4kilkc4wckrsbsxmv753ui7ma\r"
+expect -exact "*"
+
+
+expect eof

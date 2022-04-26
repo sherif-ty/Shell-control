@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="/static/style.css" type="text/css"> 
+    <meta charset="utf-8">
+    <title>select domain</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <h1>git Pull Command</h1>
+      <p>Select Domain or sub-Domain</p>
+    <form method="post" action="/dom">
+      <!-- <input type="radio" name="domain" value="talabatcom">Talabatcom<br> -->
+      <input type="radio" name="domain" value="gitpull-dev-talabatcom">Dev.Talabatcom<br>
+      <input type="radio" name="domain" value="gitpull-test-talabatcom">Test.talabatcom<br>
+      <input type="radio" name="domain" value="gitpull-uat-talabatcom">UAT.talabatcom<br>
+      <br>
+      <input type="radio" name="domain" value="gitpull-shogol">shogol.sa<br>
+      <input type="radio" name="domain" value="gitpull-dev-shogol">DEV.shogol<br>
+      <input type="radio" name="domain" value="gitpull-test-shogol">Test.shogol<br>
+      <input type="radio" name="domain" value="gitpull-uat-shogol">UAT.shogol<br>
+      <input type="submit" value="git pull">
+    </form>
+  
+  </div>
+
+  <div class="container">
+    <h1>copy Command</h1>
+    <p>Cop Admin Folder</p>
+  <form method="post" action="/dom">
+    <!-- <input type="radio" name="domain" value="talabatcom">Talabatcom<br> -->
+    <!-- <input type="radio" name="domain" value="dev-talabatcom">Dev.Talabatcom<br> -->
+    <input type="radio" name="domain" value="copy-dev-to-test">Copy Admin from DEV to Test<br>
+    <input type="radio" name="domain" value="copy-dev-to-uat">Copy Admin from DEV to UAT<br>
+    <input type="submit" value="copy">
+  </form>
+
+</div>
+<div class="container">
+
+  <p>Logout</p>
+<form method="GET" action="/logout">
+  <input type="submit" name="logout" value="logout">
+</form>
+
+</div>
+  </body>
+</html>

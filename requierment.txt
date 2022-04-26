@@ -1,0 +1,29 @@
+##Env##
+python3 -m venv auth
+source auth/bin/activate
+
+##python###
+pip install flask
+pip install Flask-SqlAlchemy
+python tabledef.py  => cearte able 
+python dummy.py  => put data 
+python app.py 
+### clear-database.py => clear able 
+##shell##
+yum or apt install expect
+autoexpect => get auto file 
+
+##learn (https://pythonspot.com/login-authentication-with-flask/   https://github.com/rveruna/test)
+
+########################
+# nohup python app.py   #
+########################
+
+############ serv
+python3 -m venv auth
+source auth/bin/activate
+
+http://192.168.6.38:5000/   
+backend
+backend
+ => cat nohup.out 
